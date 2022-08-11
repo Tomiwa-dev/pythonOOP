@@ -1,0 +1,302 @@
+[2022-08-04 07:47:26,676] {processor.py:163} INFO - Started process (PID=56) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:47:26,677] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:47:26,677] {logging_mixin.py:109} INFO - [2022-08-04 07:47:26,677] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:47:29,370] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:47:30,257] {logging_mixin.py:109} INFO - [2022-08-04 07:47:30,257] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:47:30,366] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 3.693 seconds
+[2022-08-04 07:48:00,760] {processor.py:163} INFO - Started process (PID=109) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:48:00,761] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:48:00,761] {logging_mixin.py:109} INFO - [2022-08-04 07:48:00,761] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:48:03,336] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:48:03,352] {logging_mixin.py:109} INFO - [2022-08-04 07:48:03,352] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:48:03,435] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 2.678 seconds
+[2022-08-04 07:48:33,561] {processor.py:163} INFO - Started process (PID=161) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:48:33,562] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:48:33,563] {logging_mixin.py:109} INFO - [2022-08-04 07:48:33,563] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:48:34,457] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:48:34,622] {logging_mixin.py:109} INFO - [2022-08-04 07:48:34,622] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:48:34,643] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 1.084 seconds
+[2022-08-04 07:49:04,764] {processor.py:163} INFO - Started process (PID=222) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:49:04,765] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:49:04,766] {logging_mixin.py:109} INFO - [2022-08-04 07:49:04,766] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:49:06,136] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:49:06,144] {logging_mixin.py:109} INFO - [2022-08-04 07:49:06,144] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:49:06,164] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 1.402 seconds
+[2022-08-04 07:51:08,015] {processor.py:163} INFO - Started process (PID=58) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:51:08,017] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:51:08,017] {logging_mixin.py:109} INFO - [2022-08-04 07:51:08,017] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:51:10,399] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:51:13,132] {logging_mixin.py:109} INFO - [2022-08-04 07:51:13,132] {manager.py:499} ERROR - Creation of Permission View Error: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ab_permission_view_permission_id_view_menu_id_key"
+DETAIL:  Key (permission_id, view_menu_id)=(2, 51) already exists.
+
+[SQL: INSERT INTO ab_permission_view (id, permission_id, view_menu_id) VALUES (nextval('ab_permission_view_id_seq'), %(permission_id)s, %(view_menu_id)s) RETURNING ab_permission_view.id]
+[parameters: {'permission_id': 2, 'view_menu_id': 51}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+[2022-08-04 07:51:13,138] {logging_mixin.py:109} INFO - [2022-08-04 07:51:13,138] {manager.py:499} ERROR - Creation of Permission View Error: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ab_permission_view_permission_id_view_menu_id_key"
+DETAIL:  Key (permission_id, view_menu_id)=(1, 51) already exists.
+
+[SQL: INSERT INTO ab_permission_view (id, permission_id, view_menu_id) VALUES (nextval('ab_permission_view_id_seq'), %(permission_id)s, %(view_menu_id)s) RETURNING ab_permission_view.id]
+[parameters: {'permission_id': 1, 'view_menu_id': 51}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+[2022-08-04 07:51:13,139] {logging_mixin.py:109} INFO - [2022-08-04 07:51:13,139] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:51:13,145] {logging_mixin.py:109} INFO - [2022-08-04 07:51:13,145] {dag.py:2415} INFO - Creating ORM DAG for data_ingestion_gcs_dag
+[2022-08-04 07:51:13,153] {logging_mixin.py:109} INFO - [2022-08-04 07:51:13,153] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-08-03 00:00:00+00:00
+[2022-08-04 07:51:13,331] {logging_mixin.py:109} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py:602 DeprecationWarning: DAG.full_filepath is deprecated in favour of fileloc
+[2022-08-04 07:51:13,333] {logging_mixin.py:109} INFO - [2022-08-04 07:51:13,331] {dagbag.py:602} ERROR - Failed to write serialized DAG: /opt/airflow/dags/data_ingestion_gcs_dag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 594, in _serialize_dag_capturing_errors
+    session=session,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/serialized_dag.py", line 124, in write_dag
+    (timezone.utcnow() - timedelta(seconds=min_update_interval)) < cls.last_updated,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3429, in first
+    ret = list(self[0:1])
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3203, in __getitem__
+    return list(res)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3557, in _execute_and_instances
+    querycontext, self._connection_from_session, close_with_result=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3572, in _get_bind_args
+    mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1145, in connection
+    execution_options=execution_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1151, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    self._assert_active()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 296, in _assert_active
+    code="7s2a",
+sqlalchemy.exc.InvalidRequestError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "dag_pkey"
+DETAIL:  Key (dag_id)=(data_ingestion_gcs_dag) already exists.
+
+[SQL: INSERT INTO dag (dag_id, root_dag_id, is_paused, is_subdag, is_active, last_parsed_time, last_pickled, last_expired, scheduler_lock, pickle_id, fileloc, owners, description, default_view, schedule_interval, max_active_tasks, max_active_runs, has_task_concurrency_limits, has_import_errors, next_dagrun, next_dagrun_data_interval_start, next_dagrun_data_interval_end, next_dagrun_create_after) VALUES (%(dag_id)s, %(root_dag_id)s, %(is_paused)s, %(is_subdag)s, %(is_active)s, %(last_parsed_time)s, %(last_pickled)s, %(last_expired)s, %(scheduler_lock)s, %(pickle_id)s, %(fileloc)s, %(owners)s, %(description)s, %(default_view)s, %(schedule_interval)s, %(max_active_tasks)s, %(max_active_runs)s, %(has_task_concurrency_limits)s, %(has_import_errors)s, %(next_dagrun)s, %(next_dagrun_data_interval_start)s, %(next_dagrun_data_interval_end)s, %(next_dagrun_create_after)s)]
+[parameters: {'dag_id': 'data_ingestion_gcs_dag', 'root_dag_id': None, 'is_paused': True, 'is_subdag': False, 'is_active': True, 'last_parsed_time': datetime.datetime(2022, 8, 4, 7, 51, 13, 151938, tzinfo=Timezone('UTC')), 'last_pickled': None, 'last_expired': None, 'scheduler_lock': None, 'pickle_id': None, 'fileloc': '/opt/airflow/dags/data_ingestion_gcs_dag1.py', 'owners': 'airflow', 'description': None, 'default_view': 'tree', 'schedule_interval': '"@daily"', 'max_active_tasks': 16, 'max_active_runs': 1, 'has_task_concurrency_limits': False, 'has_import_errors': False, 'next_dagrun': datetime.datetime(2022, 8, 3, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_data_interval_start': datetime.datetime(2022, 8, 3, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_data_interval_end': datetime.datetime(2022, 8, 4, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_create_after': datetime.datetime(2022, 8, 4, 0, 0, tzinfo=Timezone('UTC'))}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj) (Background on this error at: http://sqlalche.me/e/13/7s2a)
+[2022-08-04 07:51:13,334] {logging_mixin.py:109} INFO - [2022-08-04 07:51:13,334] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:51:13,335] {processor.py:174} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 168, in _run_file_processor
+    callback_requests=callback_requests,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 663, in process_file
+    dagbag.sync_to_db()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 608, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/home/airflow/.local/lib/python3.7/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/airflow/.local/lib/python3.7/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/usr/local/lib/python3.7/concurrent/futures/_base.py", line 428, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 622, in sync_to_db
+    DAG.bulk_write_to_db(self.dags.values(), session=session)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2404, in bulk_write_to_db
+    orm_dags: List[DagModel] = with_row_locks(query, of=DagModel, session=session).all()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3373, in all
+    return list(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3557, in _execute_and_instances
+    querycontext, self._connection_from_session, close_with_result=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3572, in _get_bind_args
+    mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1145, in connection
+    execution_options=execution_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1151, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    self._assert_active()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 296, in _assert_active
+    code="7s2a",
+sqlalchemy.exc.InvalidRequestError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "dag_pkey"
+DETAIL:  Key (dag_id)=(data_ingestion_gcs_dag) already exists.
+
+[SQL: INSERT INTO dag (dag_id, root_dag_id, is_paused, is_subdag, is_active, last_parsed_time, last_pickled, last_expired, scheduler_lock, pickle_id, fileloc, owners, description, default_view, schedule_interval, max_active_tasks, max_active_runs, has_task_concurrency_limits, has_import_errors, next_dagrun, next_dagrun_data_interval_start, next_dagrun_data_interval_end, next_dagrun_create_after) VALUES (%(dag_id)s, %(root_dag_id)s, %(is_paused)s, %(is_subdag)s, %(is_active)s, %(last_parsed_time)s, %(last_pickled)s, %(last_expired)s, %(scheduler_lock)s, %(pickle_id)s, %(fileloc)s, %(owners)s, %(description)s, %(default_view)s, %(schedule_interval)s, %(max_active_tasks)s, %(max_active_runs)s, %(has_task_concurrency_limits)s, %(has_import_errors)s, %(next_dagrun)s, %(next_dagrun_data_interval_start)s, %(next_dagrun_data_interval_end)s, %(next_dagrun_create_after)s)]
+[parameters: {'dag_id': 'data_ingestion_gcs_dag', 'root_dag_id': None, 'is_paused': True, 'is_subdag': False, 'is_active': True, 'last_parsed_time': datetime.datetime(2022, 8, 4, 7, 51, 13, 151938, tzinfo=Timezone('UTC')), 'last_pickled': None, 'last_expired': None, 'scheduler_lock': None, 'pickle_id': None, 'fileloc': '/opt/airflow/dags/data_ingestion_gcs_dag1.py', 'owners': 'airflow', 'description': None, 'default_view': 'tree', 'schedule_interval': '"@daily"', 'max_active_tasks': 16, 'max_active_runs': 1, 'has_task_concurrency_limits': False, 'has_import_errors': False, 'next_dagrun': datetime.datetime(2022, 8, 3, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_data_interval_start': datetime.datetime(2022, 8, 3, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_data_interval_end': datetime.datetime(2022, 8, 4, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_create_after': datetime.datetime(2022, 8, 4, 0, 0, tzinfo=Timezone('UTC'))}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj) (Background on this error at: http://sqlalche.me/e/13/7s2a)
+[2022-08-04 07:51:43,413] {processor.py:163} INFO - Started process (PID=120) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:51:43,414] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:51:43,415] {logging_mixin.py:109} INFO - [2022-08-04 07:51:43,415] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:51:44,240] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:51:44,405] {logging_mixin.py:109} INFO - [2022-08-04 07:51:44,405] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:51:44,418] {logging_mixin.py:109} INFO - [2022-08-04 07:51:44,418] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-08-03 00:00:00+00:00
+[2022-08-04 07:51:44,429] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 1.018 seconds
+[2022-08-04 07:52:14,506] {processor.py:163} INFO - Started process (PID=171) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:52:14,506] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:52:14,507] {logging_mixin.py:109} INFO - [2022-08-04 07:52:14,507] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:52:15,303] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:52:15,311] {logging_mixin.py:109} INFO - [2022-08-04 07:52:15,311] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:52:15,337] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 0.833 seconds
+[2022-08-04 07:52:45,425] {processor.py:163} INFO - Started process (PID=232) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:52:45,426] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:52:45,427] {logging_mixin.py:109} INFO - [2022-08-04 07:52:45,427] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:52:46,268] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:52:46,426] {logging_mixin.py:109} INFO - [2022-08-04 07:52:46,426] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:52:46,452] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 1.029 seconds
+[2022-08-04 07:53:16,516] {processor.py:163} INFO - Started process (PID=301) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:53:16,516] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:53:16,517] {logging_mixin.py:109} INFO - [2022-08-04 07:53:16,517] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:53:17,196] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:53:17,203] {logging_mixin.py:109} INFO - [2022-08-04 07:53:17,202] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:53:17,221] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 0.707 seconds
+[2022-08-04 07:55:44,229] {processor.py:163} INFO - Started process (PID=49) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:55:44,230] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:55:44,230] {logging_mixin.py:109} INFO - [2022-08-04 07:55:44,230] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:55:46,679] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:55:49,779] {logging_mixin.py:109} INFO - [2022-08-04 07:55:49,779] {manager.py:499} ERROR - Creation of Permission View Error: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "serialized_dag_pkey"
+DETAIL:  Key (dag_id)=(data_ingestion_gcs_dag) already exists.
+
+[SQL: INSERT INTO serialized_dag (dag_id, fileloc, fileloc_hash, data, last_updated, dag_hash) VALUES (%(dag_id)s, %(fileloc)s, %(fileloc_hash)s, %(data)s, %(last_updated)s, %(dag_hash)s)]
+[parameters: {'dag_id': 'data_ingestion_gcs_dag', 'fileloc': '/opt/airflow/dags/data_ingestion_gcs_dag1.py', 'fileloc_hash': 48643275891204297, 'data': '{"__version": 1, "dag": {"_dag_id": "data_ingestion_gcs_dag", "edge_info": {}, "tags": ["dtc-de"], "max_active_runs": 1, "schedule_interval": "@daily ... (3684 characters truncated) ... PARQUET", "sourceUris": ["gs://dtc_data_lake_velvety-network-356911/raw/yellow_tripdata_2021-01.parquet"]}}}], "dag_dependencies": [], "params": {}}}', 'last_updated': datetime.datetime(2022, 8, 4, 7, 55, 46, 687293, tzinfo=Timezone('UTC')), 'dag_hash': '2844fe97ed99cd387c634e8c0d8df89c'}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+[2022-08-04 07:55:49,780] {logging_mixin.py:109} INFO - [2022-08-04 07:55:49,779] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:55:49,788] {logging_mixin.py:109} INFO - [2022-08-04 07:55:49,788] {dag.py:2415} INFO - Creating ORM DAG for data_ingestion_gcs_dag
+[2022-08-04 07:55:49,799] {logging_mixin.py:109} INFO - [2022-08-04 07:55:49,799] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-08-03 00:00:00+00:00
+[2022-08-04 07:55:50,268] {logging_mixin.py:109} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py:602 DeprecationWarning: DAG.full_filepath is deprecated in favour of fileloc
+[2022-08-04 07:55:50,270] {logging_mixin.py:109} INFO - [2022-08-04 07:55:50,268] {dagbag.py:602} ERROR - Failed to write serialized DAG: /opt/airflow/dags/data_ingestion_gcs_dag1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 594, in _serialize_dag_capturing_errors
+    session=session,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/serialized_dag.py", line 124, in write_dag
+    (timezone.utcnow() - timedelta(seconds=min_update_interval)) < cls.last_updated,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3429, in first
+    ret = list(self[0:1])
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3203, in __getitem__
+    return list(res)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3557, in _execute_and_instances
+    querycontext, self._connection_from_session, close_with_result=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3572, in _get_bind_args
+    mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1145, in connection
+    execution_options=execution_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1151, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    self._assert_active()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 296, in _assert_active
+    code="7s2a",
+sqlalchemy.exc.InvalidRequestError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "dag_pkey"
+DETAIL:  Key (dag_id)=(data_ingestion_gcs_dag) already exists.
+
+[SQL: INSERT INTO dag (dag_id, root_dag_id, is_paused, is_subdag, is_active, last_parsed_time, last_pickled, last_expired, scheduler_lock, pickle_id, fileloc, owners, description, default_view, schedule_interval, max_active_tasks, max_active_runs, has_task_concurrency_limits, has_import_errors, next_dagrun, next_dagrun_data_interval_start, next_dagrun_data_interval_end, next_dagrun_create_after) VALUES (%(dag_id)s, %(root_dag_id)s, %(is_paused)s, %(is_subdag)s, %(is_active)s, %(last_parsed_time)s, %(last_pickled)s, %(last_expired)s, %(scheduler_lock)s, %(pickle_id)s, %(fileloc)s, %(owners)s, %(description)s, %(default_view)s, %(schedule_interval)s, %(max_active_tasks)s, %(max_active_runs)s, %(has_task_concurrency_limits)s, %(has_import_errors)s, %(next_dagrun)s, %(next_dagrun_data_interval_start)s, %(next_dagrun_data_interval_end)s, %(next_dagrun_create_after)s)]
+[parameters: {'dag_id': 'data_ingestion_gcs_dag', 'root_dag_id': None, 'is_paused': True, 'is_subdag': False, 'is_active': True, 'last_parsed_time': datetime.datetime(2022, 8, 4, 7, 55, 49, 797107, tzinfo=Timezone('UTC')), 'last_pickled': None, 'last_expired': None, 'scheduler_lock': None, 'pickle_id': None, 'fileloc': '/opt/airflow/dags/data_ingestion_gcs_dag1.py', 'owners': 'airflow', 'description': None, 'default_view': 'tree', 'schedule_interval': '"@daily"', 'max_active_tasks': 16, 'max_active_runs': 1, 'has_task_concurrency_limits': False, 'has_import_errors': False, 'next_dagrun': datetime.datetime(2022, 8, 3, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_data_interval_start': datetime.datetime(2022, 8, 3, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_data_interval_end': datetime.datetime(2022, 8, 4, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_create_after': datetime.datetime(2022, 8, 4, 0, 0, tzinfo=Timezone('UTC'))}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj) (Background on this error at: http://sqlalche.me/e/13/7s2a)
+[2022-08-04 07:55:50,270] {logging_mixin.py:109} INFO - [2022-08-04 07:55:50,270] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:55:50,272] {processor.py:174} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 168, in _run_file_processor
+    callback_requests=callback_requests,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 663, in process_file
+    dagbag.sync_to_db()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 608, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/home/airflow/.local/lib/python3.7/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/airflow/.local/lib/python3.7/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/usr/local/lib/python3.7/concurrent/futures/_base.py", line 428, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 622, in sync_to_db
+    DAG.bulk_write_to_db(self.dags.values(), session=session)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2404, in bulk_write_to_db
+    orm_dags: List[DagModel] = with_row_locks(query, of=DagModel, session=session).all()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3373, in all
+    return list(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3557, in _execute_and_instances
+    querycontext, self._connection_from_session, close_with_result=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3572, in _get_bind_args
+    mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1145, in connection
+    execution_options=execution_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1151, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    self._assert_active()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 296, in _assert_active
+    code="7s2a",
+sqlalchemy.exc.InvalidRequestError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "dag_pkey"
+DETAIL:  Key (dag_id)=(data_ingestion_gcs_dag) already exists.
+
+[SQL: INSERT INTO dag (dag_id, root_dag_id, is_paused, is_subdag, is_active, last_parsed_time, last_pickled, last_expired, scheduler_lock, pickle_id, fileloc, owners, description, default_view, schedule_interval, max_active_tasks, max_active_runs, has_task_concurrency_limits, has_import_errors, next_dagrun, next_dagrun_data_interval_start, next_dagrun_data_interval_end, next_dagrun_create_after) VALUES (%(dag_id)s, %(root_dag_id)s, %(is_paused)s, %(is_subdag)s, %(is_active)s, %(last_parsed_time)s, %(last_pickled)s, %(last_expired)s, %(scheduler_lock)s, %(pickle_id)s, %(fileloc)s, %(owners)s, %(description)s, %(default_view)s, %(schedule_interval)s, %(max_active_tasks)s, %(max_active_runs)s, %(has_task_concurrency_limits)s, %(has_import_errors)s, %(next_dagrun)s, %(next_dagrun_data_interval_start)s, %(next_dagrun_data_interval_end)s, %(next_dagrun_create_after)s)]
+[parameters: {'dag_id': 'data_ingestion_gcs_dag', 'root_dag_id': None, 'is_paused': True, 'is_subdag': False, 'is_active': True, 'last_parsed_time': datetime.datetime(2022, 8, 4, 7, 55, 49, 797107, tzinfo=Timezone('UTC')), 'last_pickled': None, 'last_expired': None, 'scheduler_lock': None, 'pickle_id': None, 'fileloc': '/opt/airflow/dags/data_ingestion_gcs_dag1.py', 'owners': 'airflow', 'description': None, 'default_view': 'tree', 'schedule_interval': '"@daily"', 'max_active_tasks': 16, 'max_active_runs': 1, 'has_task_concurrency_limits': False, 'has_import_errors': False, 'next_dagrun': datetime.datetime(2022, 8, 3, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_data_interval_start': datetime.datetime(2022, 8, 3, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_data_interval_end': datetime.datetime(2022, 8, 4, 0, 0, tzinfo=Timezone('UTC')), 'next_dagrun_create_after': datetime.datetime(2022, 8, 4, 0, 0, tzinfo=Timezone('UTC'))}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj) (Background on this error at: http://sqlalche.me/e/13/7s2a)
+[2022-08-04 07:56:20,356] {processor.py:163} INFO - Started process (PID=110) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:56:20,357] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:56:20,357] {logging_mixin.py:109} INFO - [2022-08-04 07:56:20,357] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:56:21,460] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:56:21,700] {logging_mixin.py:109} INFO - [2022-08-04 07:56:21,700] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:56:21,716] {logging_mixin.py:109} INFO - [2022-08-04 07:56:21,716] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-08-03 00:00:00+00:00
+[2022-08-04 07:56:21,730] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 1.376 seconds
+[2022-08-04 07:56:51,932] {processor.py:163} INFO - Started process (PID=186) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:56:51,933] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:56:51,933] {logging_mixin.py:109} INFO - [2022-08-04 07:56:51,933] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:56:53,135] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:56:53,143] {logging_mixin.py:109} INFO - [2022-08-04 07:56:53,142] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:56:53,179] {logging_mixin.py:109} INFO - [2022-08-04 07:56:53,179] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-08-03 00:00:00+00:00
+[2022-08-04 07:56:53,187] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 1.344 seconds
+[2022-08-04 07:57:23,280] {processor.py:163} INFO - Started process (PID=223) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:57:23,281] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:57:23,281] {logging_mixin.py:109} INFO - [2022-08-04 07:57:23,281] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:57:24,439] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:57:24,751] {logging_mixin.py:109} INFO - [2022-08-04 07:57:24,751] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:57:24,764] {logging_mixin.py:109} INFO - [2022-08-04 07:57:24,764] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-08-03 00:00:00+00:00
+[2022-08-04 07:57:24,772] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 1.494 seconds
+[2022-08-04 07:57:54,929] {processor.py:163} INFO - Started process (PID=298) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:57:54,930] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:57:54,931] {logging_mixin.py:109} INFO - [2022-08-04 07:57:54,931] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:57:55,989] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:57:55,991] {logging_mixin.py:109} INFO - [2022-08-04 07:57:55,991] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:57:56,004] {logging_mixin.py:109} INFO - [2022-08-04 07:57:56,004] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-08-03 00:00:00+00:00
+[2022-08-04 07:57:56,035] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 1.142 seconds
+[2022-08-04 07:58:26,179] {processor.py:163} INFO - Started process (PID=344) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:58:26,180] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:58:26,181] {logging_mixin.py:109} INFO - [2022-08-04 07:58:26,181] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:58:26,965] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:58:27,129] {logging_mixin.py:109} INFO - [2022-08-04 07:58:27,128] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:58:27,142] {logging_mixin.py:109} INFO - [2022-08-04 07:58:27,142] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-08-03 00:00:00+00:00
+[2022-08-04 07:58:27,150] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 0.973 seconds
+[2022-08-04 07:58:57,240] {processor.py:163} INFO - Started process (PID=411) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:58:57,241] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:58:57,242] {logging_mixin.py:109} INFO - [2022-08-04 07:58:57,242] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:58:58,365] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:58:58,555] {logging_mixin.py:109} INFO - [2022-08-04 07:58:58,554] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:58:58,567] {logging_mixin.py:109} INFO - [2022-08-04 07:58:58,567] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-08-03 00:00:00+00:00
+[2022-08-04 07:58:58,575] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 1.337 seconds
+[2022-08-04 07:59:28,637] {processor.py:163} INFO - Started process (PID=457) to work on /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:59:28,638] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag1.py for tasks to queue
+[2022-08-04 07:59:28,639] {logging_mixin.py:109} INFO - [2022-08-04 07:59:28,638] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:59:29,592] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag1.py
+[2022-08-04 07:59:29,601] {logging_mixin.py:109} INFO - [2022-08-04 07:59:29,601] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-04 07:59:29,614] {logging_mixin.py:109} INFO - [2022-08-04 07:59:29,614] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-08-03 00:00:00+00:00
+[2022-08-04 07:59:29,627] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag1.py took 0.993 seconds
