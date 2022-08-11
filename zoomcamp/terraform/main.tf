@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "google" {
-  project = "velvety-network-356911"
+  project = var.project
   region = var.region
   credentials = file("velvety-network-356911-acf2e20205d0.json")  # Use this if you do not want to set env-var GOOGLE_APPLICATION_CREDENTIALS
 }
@@ -48,4 +48,26 @@ resource "google_bigquery_dataset" "dataset" {
   location   = var.region
 }
 
+resource "google_storage_bucket" "data-lake-bucket-homework" {
+  name          = "${local.data-lake-bucket_homework}_${var.project}" # Concatenating DL bucket & Project name for unique naming
+  location      = var.region
+t
+  # Optional, but recommended settings:
+  storage_class = var.storage_class
+  uniform_bucket_level_access = true
 
+  versioning {
+    enabled     = true
+  }
+
+  lifecycle_rule {
+    action {
+      type = "Delete"
+    }
+    condition {
+      age = 30  // days
+    }
+  }
+
+  force_destroy = true
+}

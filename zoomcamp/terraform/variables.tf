@@ -2,8 +2,13 @@ locals {
   data_lake_bucket = "dtc_data_lake"
 }
 
+locals {
+  data-lake-bucket_homework = "dtc_data_lake_homework"
+}
+
 variable "project" {
   description = "Your GCP Project ID"
+  default = "velvety-network-356911"
 }
 
 variable "region" {
